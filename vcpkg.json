@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "@cpp_pt_name@",
+  "version-string": "0.0.1",
+  "dependencies": [
+    "fmt",
+    "range-v3",
+    "ms-gsl",
+    "catch2"
+  ]
+}
