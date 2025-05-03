@@ -1,5 +1,18 @@
 # C++ project template
 
+## Prerequisites
+Cmake 4.0+
+Ninja
+For windows Ninja does not seem to come with the tool chains, or at leat I cant get it to find it with this framework. Manually installing via winget is suggested.
+```sh
+winget install Ninja-build.Ninja
+```
+
+## C++23 Minimum C++ version for the project.
+On GNU and Clang compilers new enough to support it, the template will enable C++26
+Otherwise it will default to C++23, MSVC only supports C++23 as of April 2025.
+It will fail if compiler does not have C++23 support.
+
 ## Template Initialization
 
 This project is a template that cannot be used before initialization. To initialize your project, you must run the following shell command:
