@@ -1,12 +1,20 @@
 # C++ project template
+This is a modified version of msvetkins' cpp-project-template, that I try to keep updated to suit my own needs for C++ project
 
-## Prerequisites
-Cmake 4.0+
-Ninja
-For windows Ninja does not seem to come with the tool chains, or at leat I cant get it to find it with this framework. Manually installing via winget is suggested.
+
+## Windows Quirks
+For Windows I need to manually install these dependencies.
+- Cmake 4.0+
+- Ninja
+
+For windows, Ninja, does not seem to come with the tool chains, or at leat I cant get it to find it with this framework. 
+Manually installing via winget is suggested.
 ```sh
 winget install Ninja-build.Ninja
 ```
+
+Also for Windows it seems that the cl.exe (MSVC Compiler) is not in PATH, and one has to either add it to PATH manually or use the Developer Powershell for VS 2022. At least this seems to be the case for all Windows computers that I have tried this on.
+
 
 ## C++23 Minimum C++ version for the project.
 On GNU and Clang compilers new enough to support it, the template will enable C++26
