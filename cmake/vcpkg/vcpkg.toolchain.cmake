@@ -3,7 +3,7 @@
 
 include_guard(GLOBAL)
 
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 4.0)
 
 get_property(IN_TRY_COMPILE GLOBAL PROPERTY IN_TRY_COMPILE)
 
