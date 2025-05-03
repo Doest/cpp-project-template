@@ -1,5 +1,5 @@
 # C++ project template
-This is a modified version of msvetkins' cpp-project-template, that I try to keep updated to suit my own needs for C++ project
+This is a modified version of [msvetkins' cpp-project-template](https://github.com/msvetkin/cpp-project-template), that I try to keep updated to suit my own needs for C++ project
 
 
 ## Windows Quirks
@@ -7,8 +7,8 @@ For Windows I need to manually install these dependencies.
 - Cmake 4.0+
 - Ninja
 
-For windows, Ninja, does not seem to come with the tool chains, or at leat I cant get it to find it with this framework. 
-Manually installing via winget is suggested.
+For windows, Ninja, does not seem to come with the tool chains, or at least I cant get it to find it with this framework. 
+Manually installing via winget is my suggestion to fix this.
 ```sh
 winget install Ninja-build.Ninja
 ```
