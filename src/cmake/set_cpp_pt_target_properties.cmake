@@ -9,7 +9,22 @@ find_package(range-v3 CONFIG REQUIRED)
 
 # sets default target properties
 function(set_@cpp_pt_cmake@_target_properties target type)
-  target_compile_features(${target} ${type} cxx_std_26)
+  if (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
+    if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 14.0) 
+        target_compile_features(${target} ${type} cxx_std_26)
+    else()
+        target_compile_features(${target} ${type} cxx_std_23)
+    endif()
+  elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+      if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 18.0) 
+          target_compile_features(${target} ${type} cxx_std_26)
+      else()
+          target_compile_features(${target} ${type} cxx_std_23)
+      endif()
+  else()
+      target_compile_features(${target} ${type} cxx_std_23)
+  endif()
+  
   set_target_properties(${target}
     PROPERTIES
       CXX_STANDARD_REQUIRED ON
