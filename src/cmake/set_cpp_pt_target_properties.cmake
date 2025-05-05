@@ -51,8 +51,6 @@ function(set_@cpp_pt_cmake@_target_properties target type)
 
   target_link_libraries(${target}
     ${type}
-      fmt::fmt
-      range-v3::range-v3
       Microsoft.GSL::GSL
   )
 endfunction()
