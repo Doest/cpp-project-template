@@ -16,6 +16,7 @@ For windows, Ninja, does not seem to come with the tool chains, or at least I ca
 Manually installing via winget is my suggestion to fix this.
 ```sh
 winget install Ninja-build.Ninja
+winget install Kitware.CMake
 ```
 
 Also for Windows it seems that the cl.exe (MSVC Compiler) is not in PATH, and one has to either add it to PATH manually or use the Developer Powershell for VS 2022. At least this seems to be the case for all Windows computers that I have tried this on.
