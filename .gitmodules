@@ -1,0 +1,3 @@
+[submodule "cmake/presets/toolchains/WindowsToolchains"]
+	path = cmake/presets/toolchains/WindowsToolchains
+	url = https://github.com/MarkSchofield/WindowsToolchain.git
