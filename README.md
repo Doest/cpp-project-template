@@ -21,6 +21,9 @@ winget install Kitware.CMake
 
 Also for Windows it seems that the cl.exe (MSVC Compiler) is not in PATH, and one has to either add it to PATH manually or use the Developer Powershell for VS 2022. At least this seems to be the case for all Windows computers that I have tried this on.
 
+### Using Windows.MSVC toolchain file
+Using this repo for setting up MSVC toolchain. 
+[https://github.com/MarkSchofield/WindowsToolchain](https://github.com/MarkSchofield/WindowsToolchain)
 
 ### C++23 Minimum C++ version for the project.
 On GNU and Clang compilers new enough to support it, the template will enable C++26
